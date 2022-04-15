@@ -14,7 +14,7 @@ class BookTitle : Fragment(), View.OnClickListener {
         savedInstanceState: Bundle?
     ): View? {
         val v = inflater.inflate(R.layout.book_titles, container, false) //meng-inflate file sumber daya dan mengembalikannya dari dalam fungsi callback
-        return v //callback
+        return v
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
