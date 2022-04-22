@@ -14,7 +14,7 @@ class BookDescription : Fragment() {
         inflater: LayoutInflater, container:
         ViewGroup?, savedInstanceState: Bundle?
     ): View? {
-        var v = inflater.inflate(R.layout.book_description, container, false)
+        val v = inflater.inflate(R.layout.book_description, container, false)
         arrbookdesc = resources.getStringArray(R.array.bookdescriptions)
         bookindex = if (savedInstanceState?.getInt("bookindex") == null) 0
         else (savedInstanceState.getInt("bookindex"))
